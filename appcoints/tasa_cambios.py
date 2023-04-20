@@ -25,8 +25,6 @@ while moneda_cripto != "" and moneda_cripto.isalpha() == True:
 
 
 
-
-
 '''
 print("codigo http de respuesta", r.status_code)
 
