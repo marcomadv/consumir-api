@@ -20,7 +20,7 @@ for item in lista_general:
 print("cantidad_criptos: ",len(lista_criptos))
 print("cantidad_no_criptos: ",len(lista_no_criptos))
 
-#############################################
+##################################################################
 
 moneda_cripto = input("Ingrese una criptomoneda conocida: ").upper()
 
