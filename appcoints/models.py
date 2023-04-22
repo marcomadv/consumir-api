@@ -31,10 +31,10 @@ class Exchange:
 
     def updateExchange(self,apikey):
         r = requests.get(f"https://rest.coinapi.io/v1/exchangerate/{self.moneda_cripto}/EUR?apikey={apikey}")
-
         respuesta = r.json()
         self.status_code = r.status_code
         if r.status_code == 200:
             self.rate = respuesta['rate']
         else:
+            print(f"status: {r.status_code}, error: {respuesta['error']}")
             raise ModelError(f"status: {r.status_code}, error: {respuesta['error']}") 
